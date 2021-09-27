@@ -14,7 +14,8 @@ class ButtonRando extends Component {
                 <h1>
                     Your Random Number is: {this.state.num}
                 </h1>
-                {
+                {//if num is 7 button should convert to an h2 that says you win
+                //so i added conditional rendering to fix this
                     this.state.num===7?<h2>You Win</h2>: <button className="button-52" onClick={this.handleClick}>CLICK ME</button>
                 }
                 
